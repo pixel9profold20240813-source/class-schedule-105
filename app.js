@@ -193,7 +193,7 @@ function notifText(status) {
       body: `下一節：${status.next.period.label} ${status.next.subject}（${status.next.period.start}）`,
     };
   }
-  return { title: "1年5班課表", body: "目前沒有課程" };
+  return { title: "課表", body: "目前沒有課程" };
 }
 
 async function pushNotification() {
