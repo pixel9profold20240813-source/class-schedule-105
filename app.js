@@ -213,7 +213,8 @@ async function pushNotification() {
 }
 
 function setNotifyUI(on) {
-  notifyBtn.textContent = on ? "🔔 通知已開啟" : "🔔 開啟通知";
+  notifyBtn.textContent = "🔔";
+  notifyBtn.setAttribute("aria-label", on ? "通知已開啟" : "開啟通知");
   notifyBtn.classList.toggle("on", on);
 }
 
